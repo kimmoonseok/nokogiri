@@ -1,0 +1,8 @@
+<div class="container" style="text-align:center">
+    <p>노래 제목 웃기게 바꾸기</p>
+    <form action="/music/update/<%= @one_music.id %>" method="post">
+        <input type="string" name="rank" value="<%= @one_music.rank %>">
+        <input type="text" name="name" value="<%= @one_music.name %>">
+        <input type="submit" value="저장">
+    </form>
+</div>
